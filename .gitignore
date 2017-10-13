@@ -1,0 +1,6 @@
+# Eclipse project file
+bin/
+target/
+
+# OS
+.DS_Store
