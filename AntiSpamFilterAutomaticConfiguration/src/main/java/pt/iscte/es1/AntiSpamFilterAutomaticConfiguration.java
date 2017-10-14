@@ -25,7 +25,7 @@ public class AntiSpamFilterAutomaticConfiguration {
   private static final int INDEPENDENT_RUNS = 5 ;
 
   public static void main(String[] args) throws IOException {
-    String experimentBaseDirectory = "experimentBaseDirectory";
+    String experimentBaseDirectory = "..";
 
     List<ExperimentProblem<DoubleSolution>> problemList = new ArrayList<>();
     problemList.add(new ExperimentProblem<>(new AntiSpamFilterProblem()));
@@ -34,13 +34,13 @@ public class AntiSpamFilterAutomaticConfiguration {
             configureAlgorithmList(problemList);
 
     Experiment<DoubleSolution, List<DoubleSolution>> experiment =
-        new ExperimentBuilder<DoubleSolution, List<DoubleSolution>>("AntiSpamFilterAutomaticConfigurationStudy")
+        new ExperimentBuilder<DoubleSolution, List<DoubleSolution>>("SpamStudy")
             .setAlgorithmList(algorithmList)
             .setProblemList(problemList)
             .setExperimentBaseDirectory(experimentBaseDirectory)
             .setOutputParetoFrontFileName("FUN")
             .setOutputParetoSetFileName("VAR")
-            .setReferenceFrontDirectory(experimentBaseDirectory+"/referenceFronts")
+            .setReferenceFrontDirectory("../SpamStudy/referenceFronts")
             .setIndicatorList(Arrays.asList(new PISAHypervolume<DoubleSolution>()))
             .setIndependentRuns(INDEPENDENT_RUNS)
             .setNumberOfCores(8)
