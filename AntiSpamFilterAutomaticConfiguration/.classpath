@@ -3,9 +3,17 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/Users/fox/eclipse-workspace/AntiSpamFilter/jMetal/jmetal-core/target/classes"/>
-	<classpathentry kind="lib" path="/Users/fox/eclipse-workspace/AntiSpamFilter/jMetal/jmetal-problem/target/classes"/>
-	<classpathentry kind="lib" path="/Users/fox/eclipse-workspace/AntiSpamFilter/jMetal/jmetal-exec/target/classes"/>
-	<classpathentry kind="lib" path="/Users/fox/eclipse-workspace/AntiSpamFilter/jMetal/jmetal-algorithm/target/classes"/>
+	<classpathentry kind="lib" path="../jMetal/jmetal-core/target/classes" sourcepath="/jmetal-core/src"/>
+	<classpathentry kind="lib" path="../jMetal/jmetal-problem/target/classes"/>
+	<classpathentry kind="lib" path="../jMetal/jmetal-exec/target/classes"/>
+	<classpathentry kind="lib" path="../jMetal/jmetal-algorithm/target/classes"/>
+	<classpathentry kind="lib" path="Lib/commons-io-2.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-lang3-3.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-lang3-3.6-sources.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-math3-3.6.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-math3-3.6.1-tools.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-math3-3.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
